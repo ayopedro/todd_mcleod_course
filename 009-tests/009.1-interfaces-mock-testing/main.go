@@ -7,7 +7,7 @@ import (
 
 // User represents a user with an id and first name.
 type User struct {
-	ID    int
+	id    int
 	First string
 }
 
@@ -25,11 +25,11 @@ func (md MockDatastore) GetUser(id int) (User, error) {
 }
 
 func (md MockDatastore) SaveUser(u User) error {
-	_, ok := md.Users[u.ID]
+	_, ok := md.Users[u.id]
 	if ok {
-		return fmt.Errorf("User %v already exists", u.ID)
+		return fmt.Errorf("User %v already exists", u.id)
 	}
-	md.Users[u.ID] = u
+	md.Users[u.id] = u
 	return nil
 }
 
@@ -72,7 +72,7 @@ func main() {
 	}
 
 	u1 := User{
-		ID:    1,
+		id:    1,
 		First: "James",
 	}
 
@@ -81,7 +81,7 @@ func main() {
 		log.Fatalf("error %s", err)
 	}
 
-	u1Returned, err := srvc.GetUser(u1.ID)
+	u1Returned, err := srvc.GetUser(u1.id)
 	if err != nil {
 		log.Fatalf("error %s", err)
 	}
@@ -101,11 +101,11 @@ In the case of your code, both `Service` and `MockDatastore` methods are defined
 
 ```go
 func (md *MockDatastore) SaveUser(u User) error {
-    _, ok := md.Users[u.ID]
+    _, ok := md.Users[u.id]
     if ok {
-        return fmt.Errorf("User %v already exists", u.ID)
+        return fmt.Errorf("User %v already exists", u.id)
     }
-    md.Users[u.ID] = u
+    md.Users[u.id] = u
     return nil
 }
 ```

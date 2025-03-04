@@ -5,7 +5,7 @@ import "testing"
 func TestGetUser(t *testing.T) {
 	md := &MockDatastore{
 		Users: map[int]User{
-			2: {ID: 2, First: "Jenny"},
+			2: {id: 2, First: "Jenny"},
 		},
 	}
 	s := &Service{
