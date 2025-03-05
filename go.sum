@@ -2,3 +2,7 @@ github.com/ayopedro/dog v0.0.0-20241013113429-f873cb3c2a1b h1:fOJxigqA/VFDBQcOaR
 github.com/ayopedro/dog v0.0.0-20241013113429-f873cb3c2a1b/go.mod h1:g2rHSheKGvoeCjaAdlY3/rFwsQWtd9SbRRzoFFCzmrg=
 github.com/ayopedro/puppy v1.2.0 h1:tgxuD64fp4hP25DloFC7GrFcW8GtKGC6rTU42T4o1yw=
 github.com/ayopedro/puppy v1.2.0/go.mod h1:86eL2O+YU/rD8OfKgwFIaVL9oBkqduhJ6U3sIo1SC5s=
+golang.org/x/crypto v0.36.0 h1:AnAEvhDddvBdpY+uR+MyHmuZzzNqXSe/GvuDeob5L34=
+golang.org/x/crypto v0.36.0/go.mod h1:Y4J0ReaxCR1IMaabaSMugxJES1EpwhBHhv2bDHklZvc=
+golang.org/x/exp v0.0.0-20250228200357-dead58393ab7 h1:aWwlzYV971S4BXRS9AmqwDLAD85ouC6X+pocatKY58c=
+golang.org/x/exp v0.0.0-20250228200357-dead58393ab7/go.mod h1:BHOTPb3L19zxehTsLoJXVaTktb06DFgmdW6Wb9s8jqk=
